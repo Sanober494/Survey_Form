@@ -1,0 +1,149 @@
+**HTML**
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <h1>Survey Form</h1>
+    <p>This form is built as an assigmnent from freeCodeCamp.</p>
+    <main id="main">
+      <h1 id="title">Parent Satisfaction Survey Form</h1>
+      <p id="description">
+        Kindly fill out this form so that the school can use your valuable feedback to improve the quality of education and its services.
+      </p>
+      <form id="survey-form" action="#">
+        <label for="name" id="name-label"
+          ><p>Name:</p>
+          <input type="text" id="name" placeholder="e.g. San Ahmed" required />
+        </label>
+        <label for="email" id="email-label"
+          ><p>Email:</p>
+          <input
+            type="email"
+            id="email"
+            placeholder="e.g. san.ahmed@email.com"
+            required
+          />
+        </label>
+        <label for="class" id="number-label"
+          ><p>Class<em>(optional)</em>:</p>
+          <input
+            type="number"
+            id="number"
+            placeholder="e.g. 11"
+            min="10"
+            max="12"
+          />
+        </label>
+        <label for="stream" id="stream-label"
+          ><p>What is your wards stream?</p>
+          <select id="dropdown">
+            <option selected disabled hidden></option>
+            
+            <option id="science">Science</option>
+            <option id="commerce">Commerce</option>
+            <option id="arts">Arts</option>
+          </select>
+        </label>
+        <p>How satisfied are you with the teaching faculty?</p>
+        <label for="extremely_satisfied">
+          <input
+            id="extremely_satisfied"
+            type="radio"
+            name="satisfaction"
+            value="extremely_satisfied"
+          />Extremely satisfied
+        </label>
+          
+        </label>
+        </label>
+        <label for="Neutral">
+          <input
+            id="Neutral"
+            type="radio"
+            name="satisfaction"
+            value="Neutral"
+          />Neutral      </label>
+        <label for="not_satisfied">
+          <input id="not_satisfied" 
+          type="radio" name="satisfaction" value="not_satisfied" />Not satisfied
+        </label>
+         
+        </label>
+        <p>How do you want the teacher to contact you?</p>
+        <label for="Call">
+          <input
+            id="Call"
+            type="checkbox"
+            name="communications"
+            value="Call"
+          />Call
+        </label>
+        <label for="Email">
+          <input
+            id="Email"
+            type="checkbox"
+            name="communications"
+            value="Email"
+          />Email
+        </label>
+        <label for="Text_message">
+          <input
+            id="Text_message"
+            type="checkbox"
+            name="communications"
+            value="Text_message"
+          />Text_message
+        </label>
+        <p>Any feedback you would like to share:</p>
+        <textarea id="additional-information" rows="6" cols="50">
+You can fill in any feedback here.</textarea
+        >
+        <p>
+          <em
+            >Please note that this is just a sample form. Filling this out won't transmit your data anywhere.</em
+          >
+        </p>
+        <button type="Submit" id="submit">Submit</button>
+      </form>
+    </main>
+  </body>
+  <footer>
+   
+    <a href="https://www.nhcarrigan.com">Return to School Page</a>
+  </footer>
+</html>
+
+
+** CSS**
+
+main {
+  text-align: center;
+  background-color: #92869c;
+  background-blend-mode: lighten;
+  max-width: 500px;
+  margin: 20px auto;
+  border-radius: 50px;
+  box-shadow: 10px 10px rgba(0, 0, 0, 0.5);
+  color: black;
+}
+body {
+  text-align: center;
+  background: #3a3240;
+  color: white;
+}
+input, textarea, select, button {
+  background: #3a3240;
+  color: white;
+}
+a {
+  color: white;
+}
+
+
+
